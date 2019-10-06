@@ -20,9 +20,9 @@ ui <- fluidPage(
         sidebarPanel(
             numericInput("ABDOMEN",
                         "Please input your abdomen(cm):",
-                        value = 90, step = 0.1),
+                        value = 90, step = 0.1,min=0),
             numericInput("WEIGHT", "Please input your weight(lbs):", value = 170,
-                     step = 0.25)
+                     step = 0.25,min=0)
         ),
 
 
