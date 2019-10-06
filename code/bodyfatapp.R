@@ -42,10 +42,10 @@ server <- function(input, output) {
     })
     
     output$BodyFat <- renderText({
-        if( BodyFat()>0){
+        if( BodyFat()>0 & BodyFat()<100){
             paste("Your body fat is ",round(BodyFat(),2),"%.",sep="")
         }else{
-            print("Ops! There might be something wrong with your data. Please try again.")
+            paste("Ops! There might be something wrong with your data. Please try again.")
         }
     })
     
