@@ -26,6 +26,7 @@ clean_fat.csv is the dataset after clean.<br/>
 DataPreprocessing.ipynb is the jupyter notebook file to preclean the data to get the file clean_fat.csv.<br/>
 variable selection.ipynb is the jupyter notebook file to select the variables for the final model .<br/>
 Final Model & Outliers.ipynb is the jupyter notebook file to show the final model we select and the diagnosis for the model.<br/>
+bodyfatapp.R is the Shiny file to show a webpage for users.<br/>
 
 **figure** folder:<br/>
 All the figures we get from the whole process.<br/>
