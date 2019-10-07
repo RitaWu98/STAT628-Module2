@@ -41,6 +41,6 @@ Run the bodyfatapp.R,on the Shiny page,input your abdomen and weight to get your
 
 ### Contributors
 This project exists thanks to all the people who contribute.<br/>
-Github id: Daohai04 $~~~$Name:Haifeng Liu $~~~~$E-mail:hliu524@wisc.edu<br/>
-Github id: RitaWu98 $~~~$Name:Yue Wu   $~~~~~~~~~$E-mail:ywu494@wisc.edu<br/>
-Github id: hpan55 $~~~~~~$Name:Hongwei Pan $~~$E-mail:hpan55@wisc.edu<br/>
+Github id: Daohai04 Name:Haifeng Liu E-mail:hliu524@wisc.edu<br/>
+Github id: RitaWu98 Name:Yue Wu E-mail:ywu494@wisc.edu<br/>
+Github id: hpan55 Name:Hongwei Pan E-mail:hpan55@wisc.edu<br/>
