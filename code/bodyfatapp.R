@@ -8,26 +8,28 @@
 #
 
 library(shiny)
-
+?fluidPage
 # Define UI for application that draws a histogram
-ui <- fluidPage(
-
+ui <- fluidPage(theme = "cerulean",
+    
     # Application title
-    titlePanel("Calculate your BodyFat!"),
-
+    titlePanel("Calculate Your BodyFat Percentage"),
+    
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
             numericInput("ABDOMEN",
-                        "Please input your abdomen(cm):",
-                        value = 90, step = 0.1,min=0),
-            numericInput("WEIGHT", "Please input your weight(lbs):", value = 170,
-                     step = 0.25,min=0)
+                         "Please input your abdomen (cm):",
+                         value = 90, step = 0.1,min=0),
+            helpText("Recommended Input Range: 65~130 (cm)"),
+            numericInput("WEIGHT", "Please input your weight (lbs):", value = 170,
+                         step = 0.25,min=0),
+            helpText("Recommended Input Range: 115~265 (lbs)")
         ),
-
-
+        
+        
         mainPanel(
-           textOutput("BodyFat")
+            textOutput("BodyFat")
         )
     )
 )
@@ -35,7 +37,7 @@ ui <- fluidPage(
 
 
 server <- function(input, output) {
-
+    
     BodyFat = reactive({
         BodyFat = -42.95790+0.90152*input$ABDOMEN-0.11994*input$WEIGHT
         return(BodyFat)
@@ -53,6 +55,3 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-
-
-
