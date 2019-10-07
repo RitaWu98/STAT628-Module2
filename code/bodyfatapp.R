@@ -24,8 +24,8 @@ ui <- fluidPage(
             numericInput("WEIGHT", "Please input your weight(lbs):", value = 170,
                      step = 0.25,min=0),
             helpText("Note: Our result is based on the data of males from age 22-81.
-                     If you are female and the age is out of the range, 
-                     the result might not be accurate"),
+                     If you are female or your age is out of the range, 
+                     the result might not be accurate."),
             actionButton("calculate", "Let's calculate!"),
             actionButton("mail","Any problem? Contact us!")
         ),
